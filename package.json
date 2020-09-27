@@ -1,0 +1,36 @@
+{
+  "name": "odoo-rpc-typescript",
+  "version": "2.0.0",
+  "description": "Odoo RPC",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:hussaino/odoo-rpc.git"
+  },
+  "author": "Hussain Alaidarous",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hussaino/odoo-rpc/issues"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "homepage": "https://github.com/hussaino/odoo-rpc#readme",
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "prettier": "^2.0.5",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
